@@ -97,6 +97,7 @@ nav ul{
 .curriculum{
     padding: 20px 160px;
     text-align: center;
+    background-image: url("./assets/bg.png");
 }
 
 .curriculum h2{
@@ -152,4 +153,33 @@ nav ul{
 #box-3{
     background: linear-gradient(to bottom, #F2E8FF, #FFFFFF);
 }
+
+.next-bar{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    gap: 5px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#next-bar-1,#next-bar-2{
+    background-color:#FEA301;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hide{
+    display: none;
+}
+
+
 
