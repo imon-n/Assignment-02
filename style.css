@@ -179,25 +179,56 @@ nav ul{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 0px;
+    text-align: center;
+    padding: 10px ;
+    margin: 10px 100px;
+    background-color: #5D58EF;
+    background-image: url("./assets/bg.png");
 }
 
 .stories img{
     background-color: gray;
     width: 100%;
+    margin-bottom: -30px;
 }
 
 .stories button{
     padding: 15px 20px;
     border-radius: 20px;
-    font-size: 1px;
+    font-size: 15px;
     color: #FFFFFF;
     background-color: #FEA301;
     border: none;
+    margin-bottom: 10px;
+}
+
+.box-stories{
+    margin-bottom: 20px;
 }
 
 #box-a{
     grid-row: span 2;
+}
+
+#box-a img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#box-a h4{
+    margin: 20px 0;
+}
+
+#box-b img,#box-c img,#box-d img,#box-e img{
+    width: 291px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+#box-d, #box-e{
+    padding-top: -10px;
 }
 
 
