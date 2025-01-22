@@ -179,12 +179,26 @@ nav ul{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
+    gap: 10px;
     text-align: center;
-    padding: 10px ;
-    margin: 10px 100px;
-    background-color: #5D58EF;
+    padding: 150px 50px;
     background-image: url("./assets/bg.png");
+    margin: 0px 70px; 
+    /* background: linear-gradient(0deg, #FEA301 0%, #FFFFFF 100%); */
+}
+
+.stories{
+    width: 1327px;
+    height: 750px;
+    background: linear-gradient(0deg, #FFFFFF 0%, #FFF5E8 100%);
+    background-size: cover;  
+}
+
+.stories h2{
+    padding-top: 60px;
+    padding-bottom: 0px;
+    font-size: 46px;
+    text-align: center;
 }
 
 .stories img{
@@ -231,6 +245,11 @@ nav ul{
     padding-top: -10px;
 }
 
+#view{
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 600px;
+}
 
 .hide{
     display: none;
