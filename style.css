@@ -176,6 +176,30 @@ nav ul{
     align-items: center;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stories img{
+    background-color: gray;
+    width: 100%;
+}
+
+.stories button{
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 1px;
+    color: #FFFFFF;
+    background-color: #FEA301;
+    border: none;
+}
+
+#box-a{
+    grid-row: span 2;
+}
+
 
 .hide{
     display: none;
