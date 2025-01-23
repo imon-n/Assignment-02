@@ -71,10 +71,12 @@ nav ul{
 }
 .banner-1 h3{
     font-size: 56px;
+    margin-bottom: 20px;
 }
 .banner-1 p{
     font-size: 20px;
     margin: 24px 0;
+    color: black;
 }
 .banner img{
     width: 100%;
@@ -262,9 +264,14 @@ nav ul{
 
 
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* display: flex;
+    justify-content: space-around; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 50px;
     background-color: #01ACFD;
     height: 50vh;
 }
@@ -276,14 +283,10 @@ footer{
 
 footer h3{
     font-size: 25px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 footer h3,p{
     color: #FFFFFF;
-}
-
-.foot-2 h3{
-    margin-bottom: 15px;
 }
 
 .foot-list{
@@ -301,13 +304,24 @@ footer h3,p{
 .hide{
     display: none;
 }
+.menu-bar{
+    display: none;
+}
 
 @media screen and (max-width: 576px){
+    nav img{
+        width: 45px;
+        padding-left: 0px;
+    }
+    .menu-bar{
+        display: block; 
+    }
     .banner
     {
-        flex-direction: column;
-        overflow-x: hidden;
-        padding: 0px;
+        flex-direction: column-reverse;
+        align-items: center; 
+        text-align: center;
+        padding: 20px;
     }
     .btn-primary{
         padding: 12px 26px;
@@ -315,19 +329,23 @@ footer h3,p{
         font-size: 12px;
     }
     .banner-1 h3{
-        font-size: 30px;
+        font-size: 20px;
     }
-    .banner-1 p{
+    .banner p{
         font-size: 13px;
-        margin: 15px 0;
+        margin: 7px 0;
+        color: black;
+    }
+    .banner img{
+        width: 100%;
     }
 
     .boxes{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
     .box{
-        padding: 5px 0px;
         width: 300px;
         border-radius: 10px;
     }
@@ -336,6 +354,7 @@ footer h3,p{
     }
     .box p{
         font-size: 15px;
+        color: black;
     }
     .curriculum h2{
         font-size: 30px;
@@ -364,28 +383,34 @@ footer h3,p{
 
     footer
     {
-        flex-direction: column;
-        overflow-x: hidden;
+        grid-template-columns: 1fr;
         text-align: center;
-        padding: 15px 0;
+        padding: 20px;
+        height: 350px;
     }
 
     footer h3{
-        font-size: 18px;
-        /* margin-bottom: 10px; */
+        font-size: 22px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .foot-2 ul li{
+        color: white;
+        font-size: 14px;
     }
 
     .footer-1-1{
-        align-items: center;
         justify-content: center;
-        margin-bottom: 0px;
     }
 
     .foot-2{
         margin: 30px;
     }
 
-    #box-a, nav ul, nav .btn-primary{
+    nav h4, #box-a, nav ul, nav .btn-primary{
         display: none;
     }
 }
