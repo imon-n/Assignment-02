@@ -17,7 +17,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    background-color: rgb(243, 241, 238);
+    /* background-color: rgb(243, 241, 238); */
     padding: 20px 0px;
     margin-bottom: 10px;
 }
@@ -308,6 +308,12 @@ footer h3,p{
     display: none;
 }
 
+.hr-tag hr {
+    border-top: 1px solid yellow;
+    display: none;
+}
+
+
 @media screen and (max-width: 576px){
     nav img{
         width: 45px;
@@ -315,6 +321,13 @@ footer h3,p{
     }
     .menu-bar{
         display: block; 
+    }
+    .hr-tag hr{
+        display: block;
+        margin-bottom: 5px;
+    }
+    marquee{
+        margin-top: 10px;
     }
     .banner
     {
@@ -356,8 +369,10 @@ footer h3,p{
         font-size: 15px;
         color: black;
     }
+
     .curriculum h2{
         font-size: 30px;
+        margin-top: 30px;
         margin-bottom: 40px;
     }
     .next-bar{
