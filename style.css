@@ -254,9 +254,6 @@ p {
   margin-left: 10px;
 }
 
-.hide {
-  display: none;
-}
 .menu-bar {
   display: none;
 }
@@ -292,10 +289,11 @@ p {
   font-size: 46px;
   text-align: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-.box-stories-2 h2 {
-  margin-bottom: 90px;
+.box-stories-1 p{
+    color: black;
 }
 
 .stories img {
@@ -398,7 +396,7 @@ p {
 
   .box-stories-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 5px;
   }
 
@@ -416,6 +414,9 @@ p {
     margin-bottom: 20px;
   }
 
+  .box-storie h4{
+    margin-bottom: 20px;
+  }
 
   #view-btn {
     margin-left: 150px;
